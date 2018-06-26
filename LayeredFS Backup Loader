@@ -21,23 +21,12 @@ import configparser
 print = functools.partial(print, flush=True)  # Just a macro, we always need to flush... so do it?
 
 MENU_SEP = '============================'  # Menu seperator
-MAIN_OPTIONS = ['1) Sélectioner Le Jeu cible', '2) Selectioner Votre Jeu', '3) Executer LE Jeu en Question (PréModifié)', '3) Executer Le Jeu en Question (Non Modifié) Installer le code De Lancement',
-                'Désactiver Selecteur de jeu sur le jeu sélectioné en 1)', 'Désactiver Selecteur de jeu Pour Tout Les Jeux', MENU_SEP, 'Voir les Jeux Actifs et sur quel jeu', MENU_SEP, 'Quitter Appuyez Sur Home Aprés avoir Cliquer sur Ce Menu']
+MAIN_OPTIONS = ['1 Choisir le jeu Cible', '2 Choisir le jee a emuler', '-', '3 Lancer Le Jeu',
+                '-', 'Remettre le jeu Cible', MENU_SEP, 'Voir quel jeu est actif', MENU_SEP, 'Quitter le selecteur de jeux']
+MENU_SIGN = """ 
 
-MENU_SIGN = """     
-/-\      /--------\ \\   // /-------\ /-------\    /-------\  /-------\    /-------\  /---------\
-| |      | /----\ |  \\_//  | /-----/ | /---\ |    | /-----/  | /----\ \   | /-----/ / /--------/
-| |      | \----/ |   \ /   | \---\   | \---/ /    | \---\    | |    |  \  | \---\   | \-------\
-| |      |        |   | |   |     |   | /--\  \    |     |    | |    |   ) | /---/    \ <=====> \     
-| |      | /----\ |   | |   | /---/   | |   \  \   | /---/    | |    |  /  ||          \------\  \
-| \----\ | |    | |   | |   | \-----\ | |    \  \  | \-----\  | \----/ /   ||         /-------/  /
-\------/ \-/    \-/   \-/   \-------/ \ /     \_/  \-------/  \-------/    \/         \--------|/                                                                    
-
-                       /-------------------------------------------------\
-                       |       Switch Game Selector For LayeredFS        |
-                       | Traduction Par MH13 and Basée On GameRedirector | 
-                       \-------------------------------------------------/
-
+|UltraSphere Game Selector|
+|Fork de GameRedirector Simplifier Par MH13 Pour Le CFW Ultrasphere|
 
 """
 
@@ -468,3 +457,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
